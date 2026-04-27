@@ -1,1 +1,179 @@
-Kana
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kanagara Creative</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+body{background:#0f0f0f;color:#fff;overflow-x:hidden;}
+
+header{
+  position:fixed;
+  width:100%;
+  top:0;
+  background:rgba(0,0,0,0.7);
+  backdrop-filter:blur(10px);
+  padding:15px 50px;
+  display:flex;
+  justify-content:space-between;
+  z-index:999;
+}
+
+header h2{color:#fff;}
+
+nav a{
+  color:#fff;
+  margin-left:20px;
+  text-decoration:none;
+}
+
+.hero{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+  url('https://images.unsplash.com/photo-1505236858219-8359eb29e329');
+  background-size:cover;
+}
+
+.hero h1{
+  font-size:60px;
+  animation:fadeUp 1s ease;
+}
+
+.hero p{
+  margin-top:15px;
+  opacity:.8;
+}
+
+.btn{
+  display:inline-block;
+  margin-top:25px;
+  padding:12px 30px;
+  background:#ff4d5a;
+  color:#fff;
+  border-radius:30px;
+  text-decoration:none;
+}
+
+.section{
+  padding:100px 50px;
+  text-align:center;
+}
+
+.services{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
+.card{
+  background:#1a1a1a;
+  padding:30px;
+  margin:15px;
+  width:280px;
+  border-radius:15px;
+  transition:.3s;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+  background:#ff4d5a;
+}
+
+.portfolio{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
+.portfolio img{
+  width:300px;
+  margin:10px;
+  border-radius:10px;
+}
+
+footer{
+  background:#000;
+  text-align:center;
+  padding:20px;
+}
+
+@keyframes fadeUp{
+  from{opacity:0; transform:translateY(50px);}
+  to{opacity:1; transform:translateY(0);}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h2>KANAGARA</h2>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div>
+    <h1>Creative Agency & Event Organizer</h1>
+    <p>Mewujudkan event dan brand yang berkelas</p>
+    <a class="btn" href="#">Mulai Project</a>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <h2>About Us</h2>
+  <p>KANAGARA CREATIVE adalah agency profesional yang bergerak di bidang Event Organizer dan Digital Creative dengan fokus pada kualitas dan inovasi.</p>
+</section>
+
+<section class="section" id="services">
+  <h2>Services</h2>
+  <div class="services">
+    <div class="card">
+      <h3>Event Organizer</h3>
+      <p>Wedding, konser, corporate event.</p>
+    </div>
+    <div class="card">
+      <h3>Digital Marketing</h3>
+      <p>Social media, ads, branding.</p>
+    </div>
+    <div class="card">
+      <h3>Creative Production</h3>
+      <p>Video, desain, konten kreatif.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="portfolio">
+  <h2>Portfolio</h2>
+  <div class="portfolio">
+    <img src="https://images.unsplash.com/photo-1511578314322-379afb476865">
+    <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30">
+    <img src="https://images.unsplash.com/photo-1505236858219-8359eb29e329">
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <h2>Contact</h2>
+  <p>Hubungi kami sekarang</p>
+  <a class="btn" href="https://wa.me/628xxxxxxx">WhatsApp</a>
+</section>
+
+<footer>
+  <p>© 2026 Kanagara Creative</p>
+</footer>
+
+</body>
+</html>
